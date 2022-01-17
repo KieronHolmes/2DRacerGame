@@ -1,5 +1,5 @@
 import {Boot} from "./Boot";
 import {Preloader} from "./Preloader";
-import {MainMenu} from "./MainMenu";
+import {Game} from "./Game";
 
-export default [Boot, Preloader, MainMenu];
+export default [Boot, Preloader, Game];

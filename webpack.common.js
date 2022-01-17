@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/game.ts',
@@ -32,6 +33,9 @@ module.exports = {
         clean: true,
     },
     plugins: [
+      // new CleanWebpackPlugin({
+      //     cleanStaleWebpackAssets: false,
+      // }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),

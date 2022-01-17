@@ -18,9 +18,8 @@ export class Preloader extends Phaser.Scene {
 
     this.add.sprite(0, 0, 'background').setOrigin(0, 0);
     this.add.image(this.width / 2, this.width / 4, "logo");
-    console.log(this.game.canvas.width);
 
-    const loading_img = this.add.sprite(320, 480 + 100, 'loading-background').setOrigin(0.5, 0.5);
+    const loading_img = this.add.sprite(this.width/2, (this.height/2) + 100, 'loading-background').setOrigin(0.5, 0.5);
     const progress = this.add.graphics();
     this.load.on('progress', function(value) {
       progress.clear();
@@ -29,9 +28,13 @@ export class Preloader extends Phaser.Scene {
     });
 
     // Load other assets here
+    this.load.multiatlas('SpriteSheet', 'Assets/Map/SpriteSheet.json', 'Assets/Map');
+    this.load.tilemapTiledJSON('tilemap','Assets/Map/Racetrack-02.json');
+    this.load.image('car','Assets/Map/car_red_small_2.png');
+
   }
 
   public create() {
-    this.scene.start('MainMenu');
+    this.scene.start('Game',{level: 1});
   }
 }

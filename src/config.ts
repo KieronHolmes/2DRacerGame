@@ -10,13 +10,16 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
         height: 960,
-        width: 640,
+        width: 576,
     },
     scene: Scenes,
     physics: {
-        default: "arcade",
-        arcade: {
-            debug: false,
+        default: "matter",
+        matter: {
+            debug: true,
+            gravity: {
+                y: 0
+            },
         },
     },
 }
