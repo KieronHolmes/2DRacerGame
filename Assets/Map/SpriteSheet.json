@@ -1,0 +1,377 @@
+{
+	"textures": [
+		{
+			"image": "SpriteSheet.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 480,
+				"h": 480
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "land_grass11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt01.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 0,
+						"y": 96,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt02.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 0,
+						"y": 192,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt03.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 0,
+						"y": 288,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt05.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 0,
+						"y": 384,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt39.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 96,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt41.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 96,
+						"y": 96,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt42.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 96,
+						"y": 192,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt43.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 96,
+						"y": 288,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt60.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 96,
+						"y": 384,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt61.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 192,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt77.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 192,
+						"y": 96,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt78.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 192,
+						"y": 192,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt79.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 192,
+						"y": 288,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt80.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 192,
+						"y": 384,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt81.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 288,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					}
+				},
+				{
+					"filename": "road_asphalt82.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 96
+					},
+					"frame": {
+						"x": 288,
+						"y": 96,
+						"w": 96,
+						"h": 96
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:bfc4747a856f5594424ca3349b43e551:897072cb7446f383aacb911ad120ebce:160eb6758fe4007ba8592b420f92bb0b$"
+	}
+}
