@@ -51,12 +51,13 @@ export class Game extends Phaser.Scene {
     /**
      * Sets the maximum level configured in the Tilemap.
      */
-    this.maxLevel = 6;
+    this.maxLevel = 10;
   }
   preload() {
 
   }
   create() {
+    this.cameras.main.fadeIn(1000, 0, 0, 0);
     const crashSound = this.sound.add('car-crash-sound');
     const level = this.make.tilemap({key: `Level${this.level_number}`});
     const tileset = level.addTilesetImage('SpriteSheet', 'SpriteSheet');
@@ -83,8 +84,6 @@ export class Game extends Phaser.Scene {
       playerAngle = 90;
     }
 
-    console.log(playerAngle);
-
     /**
      * Create Track Layer and use Matter.JS for Collision Polygons.
      */
@@ -95,7 +94,7 @@ export class Game extends Phaser.Scene {
     /**
      * Create a new Player instance.
      */
-    this.player = new Player(this,spawnPoint.x,spawnPoint.y,'car', playerAngle);
+    this.player = new Player(this,spawnPoint.x,spawnPoint.y,'car-red', playerAngle);
     this.player.setOnCollide(function() {
       crashSound.play();
     })
@@ -122,10 +121,12 @@ export class Game extends Phaser.Scene {
     if(currentTile.properties.finishesGame == true) {
       if(this.level_number === this.maxLevel) {
         console.log("Maximum playable level");
-        this.scene.stop();
+        this.cameras.main.fadeOut(1000, 0, 0, 0)
+        this.scene.start('Menu');
       }
       else {
         const nextLevel = this.level_number + 1;
+        this.cameras.main.fadeOut(1000, 0, 0, 0)
         this.scene.start('Game',{level_number: nextLevel});
       }
     }

@@ -1,0 +1,93 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "image",
+        "key": "car-red",
+        "url": "./Assets/Images/car_red_small_2.png"
+      },
+      {
+        "type": "spritesheet",
+        "key": "button-start",
+        "url": "./Assets/Images/button-start.png",
+        "frameConfig" : {
+          "frameWidth": 180,
+          "frameHeight": 180
+        }
+      },
+      {
+        "type": "spritesheet",
+        "key": "button-back",
+        "url": "./Assets/Images/button-back.png",
+        "frameConfig" : {
+          "frameWidth": 70,
+          "frameHeight": 70
+        }
+      },
+      {
+        "type": "spritesheet",
+        "key": "button-settings",
+        "url": "./Assets/Images/button-settings.png",
+        "frameConfig" : {
+          "frameWidth": 80,
+          "frameHeight": 80
+        }
+      },
+      {
+        "type": "audio",
+        "key": "car-crash-sound",
+        "url": "./Assets/Sound/car-crash-sound.mp3"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level1",
+        "url": "./Assets/Levels/Level1.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level2",
+        "url": "./Assets/Levels/Level2.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level3",
+        "url": "./Assets/Levels/Level3.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level4",
+        "url": "./Assets/Levels/Level4.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level5",
+        "url": "./Assets/Levels/Level5.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level6",
+        "url": "./Assets/Levels/Level6.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level7",
+        "url": "./Assets/Levels/Level7.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level8",
+        "url": "./Assets/Levels/Level8.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level9",
+        "url": "./Assets/Levels/Level9.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level10",
+        "url": "./Assets/Levels/Level10.json"
+      }
+    ]
+  }
+}
