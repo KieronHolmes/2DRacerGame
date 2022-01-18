@@ -1,0 +1,36 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level1",
+        "url": "./Assets/Map/Level1.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level2",
+        "url": "./Assets/Map/Level2.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level3",
+        "url": "./Assets/Map/Level3.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level4",
+        "url": "./Assets/Map/Level4.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level5",
+        "url": "./Assets/Map/Level5.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "Level6",
+        "url": "./Assets/Map/Level6.json"
+      }
+    ]
+  }
+}

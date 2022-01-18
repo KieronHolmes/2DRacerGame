@@ -7,6 +7,7 @@ const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
 export class Preloader extends Phaser.Scene {
   private height: number;
   private width: number;
+  private tilemap;
 
   constructor() {
     super(sceneConfig);
@@ -31,10 +32,10 @@ export class Preloader extends Phaser.Scene {
     this.load.multiatlas('SpriteSheet', 'Assets/Map/SpriteSheet.json', 'Assets/Map');
     this.load.tilemapTiledJSON('tilemap','Assets/Map/Racetrack-02.json');
     this.load.image('car','Assets/Map/car_red_small_2.png');
-
+    this.load.pack('preload', './Assets/Map/pack.json', 'preload');
   }
 
   public create() {
-    this.scene.start('Game',{level: 1});
+    this.scene.start('Game',{level_number: 1});
   }
 }

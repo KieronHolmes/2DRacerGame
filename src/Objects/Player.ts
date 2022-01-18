@@ -3,12 +3,12 @@ import MatterEntity from "./MatterEntity";
 export class Player extends MatterEntity {
   private cursors: Phaser.Types.Input.Keyboard.CursorKeys;
 
-  constructor(scene: Phaser.Scene,x: number,y: number,texture: string) {
+  constructor(scene: Phaser.Scene,x: number,y: number,texture: string, playerAngle: number) {
     super(scene, x, y, texture);
 
     this.setOrigin(0.5, 0.5);
     this.setScale(0.5);
-    this.setAngle(90);
+    this.setAngle(playerAngle);
 
     this.cursors = this.scene.input.keyboard.createCursorKeys();
     this.scene.add.existing(this);
