@@ -57,8 +57,9 @@ export class Game extends Phaser.Scene {
 
   }
   create() {
-     const level = this.make.tilemap({key: `Level${this.level_number}`});
-     const tileset = level.addTilesetImage('SpriteSheet', 'SpriteSheet');
+    const crashSound = this.sound.add('car-crash-sound');
+    const level = this.make.tilemap({key: `Level${this.level_number}`});
+    const tileset = level.addTilesetImage('SpriteSheet', 'SpriteSheet');
 
     /**
      * Create Background Layer.
@@ -95,6 +96,9 @@ export class Game extends Phaser.Scene {
      * Create a new Player instance.
      */
     this.player = new Player(this,spawnPoint.x,spawnPoint.y,'car', playerAngle);
+    this.player.setOnCollide(function() {
+      crashSound.play();
+    })
 
     /**
      * Display the current level.

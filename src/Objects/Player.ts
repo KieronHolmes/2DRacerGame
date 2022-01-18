@@ -3,6 +3,7 @@ import MatterEntity from "./MatterEntity";
 export class Player extends MatterEntity {
   private cursors: Phaser.Types.Input.Keyboard.CursorKeys;
   private hasCrashed: boolean = false;
+  private healthPoints: number = 10;
 
   constructor(scene: Phaser.Scene,x: number,y: number,texture: string, playerAngle: number) {
     super(scene, x, y, texture);
@@ -15,12 +16,7 @@ export class Player extends MatterEntity {
     this.scene.add.existing(this);
     this.setFixedRotation();
   }
-
   update(): void {
-    this.setOnCollide(function() {
-      this.hasCrashed = true;
-      console.log("Crashed");
-    });
     // handle input
     if(!this.hasCrashed) {
       if (this.cursors.up.isDown) {
